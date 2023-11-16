@@ -1,0 +1,85 @@
+/* Less than 500 px */
+@media (max-width: 31.25em) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+  .container {
+    padding-inline: 2.4rem;
+  }
+
+  .app {
+    margin-bottom: 4.4rem;
+  }
+
+  .card {
+    padding: 1.2rem 2rem;
+    gap: 1.4rem;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    margin-bottom: 2.4rem;
+  }
+
+  .checkbox-wrap {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .checkbox {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .icon-cross {
+    opacity: 1;
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+
+  .card--footer {
+    font-size: 1.2rem;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .filter-mobile {
+    width: 100%;
+    padding-block: 1.6rem;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+  }
+}
+
+/* Below 376px */
+/* 23.5em */
+@media (max-width: 23.5em) {
+  .header {
+    margin-bottom: 4rem;
+  }
+  .app {
+    margin-top: -160px;
+  }
+  .card--input {
+    margin-bottom: 1.6rem;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+}

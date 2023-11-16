@@ -1,0 +1,5 @@
+Layout - fundalul + poza
+	Header - titlul + iconita tema
+	TodoApp
+		WriteBar - insert input
+		TodoList - items + filtru

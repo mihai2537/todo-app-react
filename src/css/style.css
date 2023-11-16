@@ -1,0 +1,22 @@
+.container {
+  background-color: var(--very-dark-blue);
+  overflow: hidden;
+  min-height: 100vh;
+  padding-inline: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app {
+  margin-top: -250px;
+  width: 100%;
+  max-width: 520px;
+  margin-bottom: 6.2rem;
+}
+
+.mobile-img {
+  display: none;
+}
