@@ -1,11 +1,30 @@
 import Checkbox from "./checkbox";
 
-export default function WriteBar() {
+export default function WriteBar({
+  isDone,
+  placeHolder,
+  value,
+  onInputChange,
+  onDoneChange,
+}) {
+  function handleTextChange(e) {
+    onInputChange(e.target.value);
+  }
+
+  function handleDoneChange() {
+    onDoneChange();
+  }
+
   return (
     <>
-      <article class="card card--input">
-        <Checkbox />
-        <input class="input" type="text" placeholder="Your to do item..." />
+      <article className="card card--input">
+        <Checkbox isChecked={isDone} onClick={handleDoneChange} />
+        <input
+          className="input"
+          type="text"
+          placeholder={placeHolder}
+          onChange={handleTextChange}
+        />
       </article>
     </>
   );
