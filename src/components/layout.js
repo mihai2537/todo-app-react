@@ -14,7 +14,8 @@ export default function Layout({ children }) {
         src={backgroundMobile}
         alt="A purple obscure background for mobile size"
       ></img>
-      {children}
+
+      <section className="app">{children}</section>
     </main>
   );
 }

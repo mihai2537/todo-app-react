@@ -4,6 +4,11 @@ import ReactDOM from "react-dom/client";
 import "./css/variables.css";
 import "./css/global.css";
 import "./css/style.css";
+import "./css/header.css";
+import "./css/card-input.css";
+import "./css/items.css";
+import "./css/footer.css";
+import "./css/queries.css";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
