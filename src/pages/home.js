@@ -37,6 +37,29 @@ export default function Home() {
     });
     setTodos(newTodos);
   }
+
+  function handleTodoDeleted(id) {
+    const newTodos = todos.filter((todo) => todo.id !== id);
+    setTodos(newTodos);
+  }
+
+  function handleTodoCreated(item) {
+    let id = 1;
+    let ids = null;
+    if (todos.length !== 0) {
+      ids = todos.map((todo) => todo.id).sort((a, b) => b - a);
+      id = ids[0] + 1;
+    }
+    item.id = id;
+    console.log("New todo created: " + item.id);
+    setTodos([...todos, item]);
+  }
+
+  function handleClearCompleted() {
+    const newTodos = todos.filter((todo) => !todo.isDone);
+    setTodos(newTodos);
+  }
+
   return (
     <>
       <WriteBar
@@ -45,12 +68,15 @@ export default function Home() {
         value={newText}
         onInputChange={handleInputChange}
         onDoneChange={handleDoneChange}
+        onTodoCreated={handleTodoCreated}
       />
       <TodoList
         items={todos}
         filterOption={filterOptions}
         onFilterChange={handleFilterChange}
         onTodoChecked={handleTodoChecked}
+        onTodoDeleted={handleTodoDeleted}
+        onClearCompleted={handleClearCompleted}
       />
     </>
   );

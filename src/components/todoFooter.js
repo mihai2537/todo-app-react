@@ -4,6 +4,7 @@ export default function TodoFooter({
   itemsLeft,
   filterOption,
   onFilterChange,
+  onClearCompleted,
 }) {
   return (
     <>
@@ -15,7 +16,9 @@ export default function TodoFooter({
           btnPressed={filterOption}
           onFilterChange={onFilterChange}
         ></TodoFilter>
-        <button className="btn-text">Clear Completed</button>
+        <button onClick={onClearCompleted} className="btn-text">
+          Clear Completed
+        </button>
       </li>
     </>
   );

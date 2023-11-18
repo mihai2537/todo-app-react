@@ -6,13 +6,24 @@ export default function WriteBar({
   value,
   onInputChange,
   onDoneChange,
+  onTodoCreated,
 }) {
-  function handleTextChange(e) {
-    onInputChange(e.target.value);
+  function handleTextChange(value) {
+    onInputChange(value);
   }
 
   function handleDoneChange() {
     onDoneChange();
+  }
+
+  function handleKeyDown(e) {
+    if (e.key !== "Enter") return;
+
+    onTodoCreated({
+      text: value,
+      isDone: isDone,
+    });
+    handleTextChange("");
   }
 
   return (
@@ -22,8 +33,10 @@ export default function WriteBar({
         <input
           className="input"
           type="text"
+          value={value}
           placeholder={placeHolder}
-          onChange={handleTextChange}
+          onChange={(e) => handleTextChange(e.target.value)}
+          onKeyDown={handleKeyDown}
         />
       </article>
     </>

@@ -8,6 +8,8 @@ export default function TodoList({
   filterOption,
   onFilterChange,
   onTodoChecked,
+  onTodoDeleted,
+  onClearCompleted,
 }) {
   const filteredItems = filterItems(items, filterOption);
 
@@ -18,6 +20,7 @@ export default function TodoList({
         isDone={item.isDone}
         text={item.text}
         onCheckClicked={() => onTodoChecked(item.id)}
+        onTodoDeleted={() => onTodoDeleted(item.id)}
       />
     );
   });
@@ -33,6 +36,7 @@ export default function TodoList({
           itemsLeft={itemsLeft}
           filterOption={filterOption}
           onFilterChange={onFilterChange}
+          onClearCompleted={onClearCompleted}
         ></TodoFooter>
       </ul>
       <TodoFilter
