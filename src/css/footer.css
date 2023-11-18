@@ -1,3 +1,8 @@
 .footer {
   color: var(--very-dark-grayish-blue);
 }
+
+.count-left {
+  display: inline-block;
+  width: 1rem;
+}
