@@ -42,5 +42,5 @@
   --card-background-color: var(--very-dark-desaturated-blue);
   --card-text-color: var(--light-grayish-blue-second);
   --card-text-color-hover: var(--light-grayish-blue-second-hover);
-  --card-secondary-color: var(--very-dark-grayish-blue);
+  --card-secondary-color: var(--very-dark-grayish-blue-second);
 }

@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--very-dark-blue);
+  background-color: var(--background-color);
   overflow: hidden;
   min-height: 100vh;
   padding-inline: 3rem;

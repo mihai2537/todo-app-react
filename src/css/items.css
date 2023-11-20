@@ -10,7 +10,7 @@
 }
 
 .card--item:hover {
-  color: var(--light-grayish-blue-second-hover);
+  color: var(--card-text-color-hover);
 }
 
 .card-text {
@@ -19,7 +19,7 @@
 }
 
 .card-text--crossed {
-  color: var(--very-dark-grayish-blue-second);
+  color: var(--card-secondary-color);
   text-decoration: line-through;
 }
 
@@ -35,7 +35,7 @@
 
 .card--footer {
   font-size: 1.6rem;
-  color: var(--very-dark-grayish-blue-second);
+  color: var(--card-secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +50,7 @@
 .btn-text {
   background: none;
   border: none;
-  color: var(--very-dark-grayish-blue-second);
+  color: var(--card-secondary-color);
   font-size: inherit;
   font-family: inherit;
   cursor: pointer;
@@ -87,7 +87,7 @@
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  background: var(--very-dark-desaturated-blue);
+  background: var(--card-background-color);
 
   display: flex;
   justify-content: center;

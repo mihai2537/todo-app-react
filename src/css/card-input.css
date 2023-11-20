@@ -18,7 +18,7 @@
   list-style: none;
   padding: 2rem 3rem;
 
-  background-color: var(--very-dark-desaturated-blue);
+  background-color: var(--card-background-color);
 }
 
 .card--input {
@@ -33,7 +33,7 @@
 */
 .input {
   width: 100%;
-  color: var(--light-grayish-blue-second-hover);
+  color: var(--card-text-color-hover);
   font-family: inherit;
   font-size: inherit;
   background-color: inherit;
