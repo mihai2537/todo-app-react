@@ -20,3 +20,11 @@
 .mobile-img {
   display: none;
 }
+
+.zero-opacity {
+  opacity: 0;
+}
+
+.full-opacity {
+  opacity: 1;
+}

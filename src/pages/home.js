@@ -1,4 +1,4 @@
-import WriteBar from "../components/writeBar";
+import WriteBar from "../components/writeBar/writeBar";
 import TodoList from "../components/todoList";
 import { useState } from "react";
 import todosFromAPI from "../data";

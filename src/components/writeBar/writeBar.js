@@ -1,4 +1,5 @@
-import Checkbox from "./checkbox";
+import Checkbox from "../checkbox";
+import { isValid } from "./utils";
 
 export default function WriteBar({
   isDone,
@@ -19,16 +20,28 @@ export default function WriteBar({
   function handleKeyDown(e) {
     if (e.key !== "Enter") return;
 
+    if (!isInputValid) return;
+
     onTodoCreated({
       text: value,
       isDone: isDone,
     });
     handleTextChange("");
   }
+  const isInputValid = isValid(value);
 
   return (
     <>
-      <article className="card card--input">
+      <p
+        className={`validation-msg ${
+          isInputValid ? "zero-opacity" : "full-opacity"
+        }`}
+      >
+        Error: max length allowed is 32
+      </p>
+      <article
+        className={`card card--input ${isInputValid ? "" : "invalid-shadow"}`}
+      >
         <Checkbox isChecked={isDone} onClick={handleDoneChange} />
         <input
           className="input"

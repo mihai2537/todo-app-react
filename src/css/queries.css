@@ -62,6 +62,11 @@
     justify-content: center;
     gap: 1.8rem;
   }
+
+  .validation-msg {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
 }
 
 /* Below 376px */

@@ -44,3 +44,14 @@
 .input:focus {
   outline: none;
 }
+
+.validation-msg {
+  /* transition: all 100ms; */
+  color: #fff5f5;
+  font-size: 1.6rem;
+  margin-left: 3rem;
+}
+
+.invalid-shadow {
+  box-shadow: 0 0 3px #fff5f5 inset;
+}
