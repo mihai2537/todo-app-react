@@ -8,9 +8,13 @@ Layout - fundalul + poza
 TODOS:
 
 forbid extremely long words inside the text input - if they do not have spaces, they will not break on new line causing overflow.
-find a decent character limit for the whole input string (spaces included)
+find a decent character limit for the whole input string (spaces included) - DONE, 32 limit
 
-Add error message when any of the input constraints are not respected
+Add error message when any of the input constraints are not respected - DONE, for total length
+
+Make the switch theme button work
+	- research a simple "react" way of doing it
+	- implement it
 
 Add drag and drop functionality.
 

@@ -9,17 +9,17 @@
   /* Light Theme */
   --very-light-gray: rgb(250, 250, 250);
   --very-light-grayish-blue: rgb(228, 229, 241);
-  --light-grayish-blue: rgb(209, 210, 219);
-  --dark-grayish-blue: rgb(147, 148, 165);
-  --very-dark-grayish-blue: rgb(72, 75, 106);
+  --light-grayish-blue-first: rgb(209, 210, 219);
+  --dark-grayish-blue-first: rgb(147, 148, 165);
+  --very-dark-grayish-blue-first: rgb(72, 75, 106);
 
   /* Dark Theme*/
   --very-dark-blue: rgb(22, 23, 34);
   --very-dark-desaturated-blue: rgb(37, 39, 60);
-  --light-grayish-blue: rgb(202, 205, 232);
-  --light-grayish-blue-hover: rgb(228, 229, 241);
-  --dark-grayish-blue: hsl(234, 11%, 52%);
-  --very-dark-grayish-blue: #4d5066;
+  --light-grayish-blue-second: rgb(202, 205, 232);
+  --light-grayish-blue-second-hover: rgb(228, 229, 241);
+  --dark-grayish-blue-second: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue-second: rgb(77, 80, 102);
   --extreme-dark-grayish-blue: rgb(57, 58, 76);
 
   /* Fonts */
@@ -27,4 +27,20 @@
   --weight-bold: 700;
 
   --size-normal: 1.8rem;
+}
+
+.light-theme {
+  --background-color: var(--very-light-gray);
+  --card-background-color: var(--very-light-grayish-blue);
+  --card-text-color: var(--very-dark-grayish-blue-first);
+  --card-text-color-hover: var(--very-dark-grayish-blue-first);
+  --card-secondary-color: var(--dark-grayish-blue-first);
+}
+
+.dark-theme {
+  --background-color: var(--very-dark-blue);
+  --card-background-color: var(--very-dark-desaturated-blue);
+  --card-text-color: var(--light-grayish-blue-second);
+  --card-text-color-hover: var(--light-grayish-blue-second-hover);
+  --card-secondary-color: var(--very-dark-grayish-blue);
 }

@@ -10,7 +10,7 @@
 }
 
 .card--item:hover {
-  color: var(--light-grayish-blue-hover);
+  color: var(--light-grayish-blue-second-hover);
 }
 
 .card-text {
@@ -19,7 +19,7 @@
 }
 
 .card-text--crossed {
-  color: var(--very-dark-grayish-blue);
+  color: var(--very-dark-grayish-blue-second);
   text-decoration: line-through;
 }
 
@@ -35,7 +35,7 @@
 
 .card--footer {
   font-size: 1.6rem;
-  color: var(--very-dark-grayish-blue);
+  color: var(--very-dark-grayish-blue-second);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,14 +50,14 @@
 .btn-text {
   background: none;
   border: none;
-  color: var(--very-dark-grayish-blue);
+  color: var(--very-dark-grayish-blue-second);
   font-size: inherit;
   font-family: inherit;
   cursor: pointer;
 }
 
 .btn-text:hover {
-  color: var(--light-grayish-blue);
+  color: var(--light-grayish-blue-second);
 }
 
 .btn-text.filter--active {
