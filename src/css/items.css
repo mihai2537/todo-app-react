@@ -79,6 +79,10 @@
   padding: 1px;
 }
 
+.checkbox-wrap.checkbox--active {
+  background: var(--card-background-color);
+}
+
 .checkbox-wrap:hover {
   background: var(--check-background);
 }
@@ -94,7 +98,7 @@
   align-items: center;
 }
 
-.checkbox--active {
+.checkbox--active .checkbox {
   background: var(--check-background);
 }
 

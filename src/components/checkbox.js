@@ -1,8 +1,11 @@
 export default function Checkbox({ isChecked, onClick }) {
   return (
     <>
-      <div onClick={onClick} className="checkbox-wrap">
-        <div className={`checkbox ${isChecked ? "checkbox--active" : ""}`}>
+      <div
+        onClick={onClick}
+        className={`checkbox-wrap ${isChecked ? "checkbox--active" : ""}`}
+      >
+        <div className="checkbox">
           <svg
             className="checkbox-icon"
             xmlns="http://www.w3.org/2000/svg"
