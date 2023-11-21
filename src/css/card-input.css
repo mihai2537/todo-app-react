@@ -47,11 +47,12 @@
 
 .validation-msg {
   /* transition: all 100ms; */
-  color: #fff5f5;
+  color: var(--validation-msg-color);
   font-size: 1.6rem;
   margin-left: 3rem;
+  margin-bottom: 3px;
 }
 
 .invalid-shadow {
-  box-shadow: 0 0 3px #fff5f5 inset;
+  box-shadow: 0 0 8px var(--validation-msg-shadow) inset;
 }
