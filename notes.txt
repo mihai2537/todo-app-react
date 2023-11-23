@@ -12,9 +12,11 @@ find a decent character limit for the whole input string (spaces included) - DON
 
 Add error message when any of the input constraints are not respected - DONE, for total length
 
-Make the switch theme button work
+Make the switch theme button work - DONE
 	- research a simple "react" way of doing it
 	- implement it
+
+Try to add a transition to the image theme change
 
 Add drag and drop functionality.
 
@@ -25,6 +27,3 @@ Figure out some nice default messages for the already existing items:
 "Welcome to TODOs App"
 "Create new items, hit the checkbox when they are done"
 "Have fun!"
-
-
-I don't like current theme transition beucase it slows hovers, need to fix that.

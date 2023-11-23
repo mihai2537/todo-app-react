@@ -1,26 +1,26 @@
 const todos = [
   {
-    text: "Jog around the park 3x",
+    text: "Welcome!",
     isDone: false,
     id: 1,
   },
   {
-    text: "Complete online Javascript Course",
-    isDone: true,
+    text: "Add new TODO items",
+    isDone: false,
     id: 2,
   },
   {
-    text: "10 minutes meditation",
-    isDone: false,
+    text: "Check them when job is done",
+    isDone: true,
     id: 3,
   },
   {
-    text: "Read for 1 hour",
+    text: "Up to 32 characters per to do!",
     isDone: false,
     id: 4,
   },
   {
-    text: "Pick up groceries",
+    text: "Have fun!",
     isDone: false,
     id: 5,
   },
