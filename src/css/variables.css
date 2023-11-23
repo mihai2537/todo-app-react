@@ -28,6 +28,9 @@
   --weight-bold: 700;
 
   --size-normal: 1.8rem;
+
+  --background-transition: background 0.5s ease;
+  --color-transition: color 0.5s ease;
 }
 
 .light-theme {

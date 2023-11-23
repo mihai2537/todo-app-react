@@ -26,6 +26,8 @@
   border-radius: 6px;
 
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+  transition: var(--background-transition), var(--color-transition);
 }
 
 /* Investigate how to make the input look more centered. So far it works with

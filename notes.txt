@@ -25,3 +25,6 @@ Figure out some nice default messages for the already existing items:
 "Welcome to TODOs App"
 "Create new items, hit the checkbox when they are done"
 "Have fun!"
+
+
+I don't like current theme transition beucase it slows hovers, need to fix that.

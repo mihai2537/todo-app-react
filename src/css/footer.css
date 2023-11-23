@@ -1,5 +1,6 @@
 .footer {
   color: var(--card-secondary-color);
+  transition: var(--background-transition), var(--color-transition);
 }
 
 .count-left {

@@ -7,6 +7,7 @@
 .card--item {
   border-bottom: 0.1px solid var(--border-color);
   cursor: pointer;
+  transition: var(--background-transition);
 }
 
 .card--item:hover {
@@ -39,6 +40,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  transition: var(--background-transition), var(--color-transition);
 }
 
 .filter {
@@ -77,6 +80,8 @@
   background: var(--checkbox-border);
   cursor: pointer;
   padding: 1px;
+
+  transition: var(--background-transition);
 }
 
 .checkbox-wrap.checkbox--active {
@@ -96,6 +101,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: var(--background-transition);
 }
 
 .checkbox--active .checkbox {
