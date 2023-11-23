@@ -48,7 +48,6 @@
 }
 
 .validation-msg {
-  /* transition: all 100ms; */
   color: var(--validation-msg-color);
   font-size: 1.6rem;
   margin-left: 3rem;
