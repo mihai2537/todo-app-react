@@ -17,10 +17,29 @@
   width: 100%;
   max-width: 520px;
   margin-bottom: 6.2rem;
+  z-index: 5;
 }
 
 .mobile-img {
   display: none;
+}
+
+.desktop-img {
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img--dark {
+  transition: opacity 1s ease;
+}
+
+.img--light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease;
 }
 
 .zero-opacity {
@@ -29,6 +48,14 @@
 
 .full-opacity {
   opacity: 1;
+}
+
+.z-index-normal {
+  z-index: 0;
+}
+
+.z-index-below {
+  z-index: -2;
 }
 
 .hide {

@@ -9,22 +9,38 @@ import { ThemeContext, Themes } from "../theme";
 export default function Layout({ children }) {
   const { theme } = useContext(ThemeContext);
 
+  const isDarkTheme = theme === Themes.DARK;
+  const visiblityClassesDark = isDarkTheme
+    ? "full-opacity z-index-normal"
+    : "zero-opacity z-index-below";
+  const visiblityClassesLight = !isDarkTheme
+    ? "full-opacity z-index-normal"
+    : "zero-opacity z-index-below";
+
   return (
     <main className={`container ${theme}`}>
-      <img
-        className="desktop-img"
-        src={
-          theme === Themes.DARK ? backgroundDesktopDark : backgroundDesktopLight
-        }
-        alt="A purple obscure background for desktop size"
-      />
-      <img
-        className="mobile-img"
-        src={
-          theme === Themes.LIGHT ? backgroundMobileLight : backgroundMobileDark
-        }
-        alt="A purple obscure background for mobile size"
-      ></img>
+      <section className="img-wrapper">
+        <img
+          className={`desktop-img img--dark ${visiblityClassesDark}`}
+          src={backgroundDesktopDark}
+          alt="A purple obscure background for desktop size"
+        />
+        <img
+          className={`desktop-img img--light ${visiblityClassesLight}`}
+          src={backgroundDesktopLight}
+          alt="A purple obscure background for desktop size"
+        />
+        <img
+          className={`mobile-img img--dark ${visiblityClassesDark}`}
+          src={backgroundMobileDark}
+          alt="A purple obscure background for mobile size"
+        />
+        <img
+          className={`mobile-img img--light ${visiblityClassesLight}`}
+          src={backgroundMobileLight}
+          alt="A purple obscure background for mobile size"
+        />
+      </section>
 
       <section className="app">{children}</section>
     </main>
